@@ -1,0 +1,29 @@
+/******CSS Separation #006838 green, #662d91 purple, #E6E7E8 silver, #231f20 black, #d13713 warmth, #0363ad blue */
+
+.lpBlueBg {
+	background: #7f7f7f;
+}
+
+.lpLeftBubble:before {
+	border-color: transparent #7f7f7f;
+}
+
+.lpBlueButton {
+	background: #7f7f7f;
+}
+
+#lpChatTitleContainer {
+	background-color: #7f7f7f;
+}
+
+.lpHeight365 {
+	height: 85%!important;
+}
+
+.lpPadLeftRight19 {
+	top: 10%!important;
+}
+
+#lpChatFooterSection {
+	height: 14%!important;
+}

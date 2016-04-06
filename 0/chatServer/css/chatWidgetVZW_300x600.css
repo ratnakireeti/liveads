@@ -1,0 +1,17 @@
+/******CSS Separation #006838 green, #662d91 purple, #E6E7E8 silver, #231f20 black, #d13713 warmth, #0363ad blue */
+
+.lpBlueBg {
+	background: #cd040b;
+}
+
+.lpLeftBubble:before {
+	border-color: transparent #cd040b;
+}
+
+.lpBlueButton {
+	background: #cd040b;
+}
+
+#lpChatTitleContainer {
+	background-color: #cd040b;
+}

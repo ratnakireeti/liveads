@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://base.liveperson.net/hcp/html/lpchatV3.min.js"></script>
+<script src="https://base.liveperson.net/hcp/html/SurveyLogicInstance.min.js"></script>
+<script src="js/chatWidgetConfig.js"></script>
+<script src="js/chatWidgetAssist.js"></script>
+<script src="js/chatWidgetCore.js"></script>
+<script src="js/json2-min.js"></script>
+<link rel="stylesheet" href="css/chatWidgetFrame.css"/>
+
+<script>
+if (!window.jQuery) {
+	var scr   = document.createElement("script");
+	scr.type  = "text/javascript";
+	scr.src   = "js/jquery-1.11.1.min.js";
+	document.getElementsByTagName('head')[0].appendChild(scr);
+}
+
+var script   = document.createElement("script");
+script.type  = "text/javascript";
+script.src   = "/visitor/liveads/"+getQueryStringParameter('lpAccNumber')+"/lpacctkeys.js";
+document.getElementsByTagName('head')[0].appendChild(script);
+
+var style   = document.createElement("link");
+style.rel  = "stylesheet";
+style.type  = "text/css";
+style.href   = "/visitor/liveads_1.1.1/0/chatServer/css/chatWidget"+getQueryStringParameter('chatStyle')+".css";
+document.getElementsByTagName('head')[0].appendChild(style);
+
+function getQueryStringParameter(name){
+	var url = window.location.href;
+	var results = null;
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+
+	if (url){
+		results = regex.exec(url);
+	}
+	return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+</head>
+<body>
+	<div id="lpChatWizFrameContainer">
+		<div id="lpChatFrameContainer">
+			<div id="lpChatBodySection" class="lpHeight365" ></div>
+			<div id="lpChatFooterSection" class='lpMiddleSection'>
+				<div class="lpPadLeftRight19" style="position: relative; top: 20%;">
+					<div id="lpPreChatCloseBtn" style="float: left;" class='lpTextCenter lpPointer lpBlueButton'>End Chat</div>
+					<div id="lpSendChatBtn" style="float: right;" class='lpTextCenter lpPointer lpBlueButton'>Send</div>
+					<div class="lpClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id='notificationDialog' title='Notification'></div>
+	</div>
+</body>

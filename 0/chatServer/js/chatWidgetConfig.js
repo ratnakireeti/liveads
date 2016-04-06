@@ -1,0 +1,68 @@
+/**
+ * This file contains all the pre-configurable settings for Embedded Window on iFrame.
+ * You can change the setting as needed
+ **/
+window.lpCWTag = window.lpCWTag || {};
+window.lpCWTagConst = window.lpCWTagConst || {};
+
+lpCWTagConst.CC_MASKING_ENABLE = true; //enable/disable credit masking
+lpCWTagConst.DEBUG_ENABLE = false; //indicates if printing log in console 
+lpCWTagConst.INFO_ENABLE = false;
+lpCWTagConst.LOGGER_NAME_IFRAME = "LPChatServer"; //debug purposes only
+
+lpCWTagConst.lpCompanyName = "American Express";
+lpCWTagConst.lpPrivacyStatementUrl = "http://chatinads.weebly.com/icon-faq.html"
+lpCWTagConst.customPreChatLines = [""]; //prechat lines that will printed to the Agent Console upon request chat
+lpCWTagConst.lpUseAutoGenNumberOnSurvey = false; //if true we will generate index numbers for pre , post and logic questions
+lpCWTagConst.lpChatNotification_ClickOutsideToClose = false;
+lpCWTagConst.lpChatNotification_Timeout = 5000; //in milisecond - default 5sec
+lpCWTagConst.lpSessionMgr_KeepAlive = 40000;//session will be resume before this time (40second).
+lpCWTagConst.lpSessionMgr_RefreshInterval = 5000; //session will be update every 5 seconds
+lpCWTagConst.privacyWinOption = "width=500, height=300, resizable=yes, scrollbars=1"; //define the popup window for privacy statement
+lpCWTagConst.lpNoAvailableAgentsMsg = "no-available-agents";
+
+/* static text to be used on iFrame side */
+lpCWTagConst.lpTxt_AgentTyping = "Customer Care Professional is typing...";
+//lpCWTagConst.lpTxt_ChatInput = "Type here and hit <enter> to chat.";
+lpCWTagConst.lpTxt_ChatInput = "Type and hit enter to send.";
+lpCWTagConst.lpTxt_DecrFontSize = "Decrease Font Size";
+lpCWTagConst.lpTxt_IncrFontSize = "Increase Font Size";
+lpCWTagConst.lpTxt_TurnOffSound = "Turn off Sound";
+lpCWTagConst.lpTxt_TurnOnSound = "Turn on Sound";
+lpCWTagConst.lpTxt_SelectOne = "Select One";
+lpCWTagConst.lpBtn_StartChat = "Start Live Chat";
+lpCWTagConst.lpBtn_Submit = "Submit";
+lpCWTagConst.lpTxt_WS_Est_Connection = "Establishing Secure Connection";
+
+lpCWTagConst.lpMsg_NotHaveValidVal = "Not a valid value\n";
+lpCWTagConst.lpMsg_IsRequired = "is required";
+lpCWTagConst.lpMsg_CompTheRequiredField = "Complete the required field";
+lpCWTagConst.lpMsg_PCIFormSubmitted = "Secure form data sent";
+lpCWTagConst.lpMsg_CreditCardPatternDetected_InSurvey = "The system detected and blocked a credit card pattern. Please do not share your credit card information, security code or CVV.";
+lpCWTagConst.lpMsg_CreditCardPatternDetected_InChat = "The system detected and blocked a credit card pattern ** Please do not share your credit card information, security code or CVV during this chat."
+lpCWTagConst.lpMsg_UpdateBrowser = "The internet browser you are currently using is limiting your online experience. We recommend you download the latest version of your internet browser which will improve your experience on the web and allow you to chat with us.";
+lpCWTagConst.lpMsg_OnInfoEventErrorMsg = "Sorry! We're currently experiencing technical difficulties and are unable to connect at this time";
+lpCWTagConst.lpMsg_APICallFailure = "We apologize for the interruption in service";
+lpCWTagConst.lpMsg_APICallFailure_Exit = "Thank you for chatting with us";
+lpCWTagConst.lpMsg_APICallFailure_SubmitSurvey = "There has been an error submitting your survey. Please try again";
+lpCWTagConst.lpMsg_ChatSessionEnded = "Chat session has ended";
+//lpCWTagConst.lpMsg_PrivacyStatement = "For information on how " + lpCWTagConst.lpCompanyName + " protects your privacy, please read our <a id='lpPrivacyStmntBtn' class='lpChatFooterCyan'>Privacy Statement</a>.";
+lpCWTagConst.lpMsg_PrivacyStatement = "<a id='lpPrivacyStmntBtn' class='lpChatFooterCyan'>About LiveAds!</a>";
+
+/** USE FOR SESSION STORAGE MANAGER. DO NOT MODIFY THESE ATTRIBUTES **/
+lpCWTagConst.lpConst_SM_chatStarted = "lpChatStarted";
+lpCWTagConst.lpConst_SM_chatLastUpdate= "lpChatLastUpdate";
+lpCWTagConst.lpConst_SM_offlineSurveyNameOverride = "lpOfflineSurveyNameOverride";
+lpCWTagConst.lpConst_SM_preChatSurveyNameOverride = "lpPreChatSurveyNameOverride";
+lpCWTagConst.lpConst_SM_exitSurveyNameOverride = "lpExitSurveyNameOverride";
+lpCWTagConst.lpConst_SM_visitorSessionId = "lpVisitorSessionId";
+lpCWTagConst.lpConst_SM_SUID = "lpsuid";
+lpCWTagConst.lpConst_SM_chatSkill = "lpChatSkill";
+lpCWTagConst.lpConst_SM_chatState = "lpWizChatState";
+lpCWTagConst.lpConst_SM_visitorId = "lpVisitorId";
+lpCWTagConst.lpConst_SM_visitorSessionId = "lpVisitorSessionId";
+lpCWTagConst.lpConst_SM_chatWizParam = "lpChatWizParam";
+lpCWTagConst.lpConst_SM_chatWizSurveyParam = "lpChatWizSurveyParam";
+lpCWTagConst.lpConst_SM_audio = "lpAudio";
+lpCWTagConst.lpConst_SM_fontSize = "lpFontSize";
+lpCWTagConst.lpConst_SM_minimized = "lpMinimized";

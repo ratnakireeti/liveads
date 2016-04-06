@@ -1,0 +1,22 @@
+<html>
+<head>
+<link rel="shortcut icon" href="">
+</head>
+<body>
+<H2>LiveAds! Enabled Creative</H2>
+<!-- BEGIN ad container//-->
+<div id="responseDiv">
+		<!-- BEGIN div for the ad to which LiveAds will be added//-->
+		<div class="GoogleActiveViewClass" id="DfaVisibilityIdentifier_235346318" style="width: 300px; height: 250px;">
+			<div style="display:table; width: 100%; height: 100%">
+				<div id="AdContent" style="position:absolute;float:left;">   
+					<iframe src="http://m00re.org/visitor/liveads/sap/creative/fernglas1_300x250/index.html" width="300" height="250" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bordercolor="#000000"></iframe>
+				</div>	
+			</div>
+		</div>
+		<!-- <div id="AdContent" style="position:absolute;float:left;">   
+			<iframe src="http://m00re.org/visitor/liveads/sap/creative/fernglas1_300x250/index.html" width="300" height="250" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bordercolor="#000000"></iframe>
+		</div> -->
+		<script type="text/javascript" src="https://sales.liveperson.net/visitor/liveads_1.2.0/0/LA_chat_test1.min.js?lpAccNumber=6276541&lpMasterAcc=6276541&liveads_advertiser=sap&liveads_campaign=SME~de~de&liveads_creative=fernglas1~sap_002&liveads_icon=svg_left_orange&adWidth=300&adHeight=250&ButtonTop=110&ButtonLeft=100&ButtonDelay=1001&ChatStyle=BLUE_300x250&Item=CRM-DE16-1SB-AA09&Bid=na&Condition=test&Context=na&WBScode=CRM-DE16-1SB-AA10&isMin=true"></script>
+</body>
+</html>
